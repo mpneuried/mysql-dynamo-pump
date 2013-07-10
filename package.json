@@ -4,7 +4,8 @@
 	"description": "Pump data from a mysql databse to aws dynamo db.",
 	"keywords": [ "dynamo", "aws", "amazon", "pump", "move", "db", "mysql", "migrate", "sql" ],
 	"tags": [ "dynamo", "aws", "amazon", "pump", "move", "db", "mysql", "migrate", "sql" ],
-	"version": "0.1.0",
+	"version": "0.1.2",
+
 	"engines": {
 		"node": "> 0.8.*"
 	},
@@ -12,6 +13,7 @@
 		"type": "git",
 		"url": "git://github.com/mpneuried/mysql-dynamo-pump.git"
 	},
+	"main": "./pump.js",
 	"dependencies": {
 		"mysql": "2.x",
 		"aws-sdk": "*",

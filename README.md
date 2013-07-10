@@ -14,7 +14,7 @@ All you have to do is overwrite the methods `readSQL()` and `convertToDynamoItem
 
 For an example have a look at the file `_src/example.coffee`
 
-To build it you have to run `npm install` and `grunt`.
+To build it you have to run `npm install cli mysql-dynamo-pump`.
 
 You can read the console help by starting it with
 `node example.js --help`

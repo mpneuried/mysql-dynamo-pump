@@ -4,7 +4,7 @@ async = require "async"
 _ = require( "lodash" )._
 cli = require("cli")
 
-module.exports = class Pump
+class Pump
 	constructor: ( @cnf )->
 		return
 
@@ -249,3 +249,8 @@ module.exports = class Pump
 	writeProcess: =>
 		cli.progress( @shared.iDone / @shared.iTodo )
 		return
+
+
+Pump.utils = require './utils'
+
+module.exports = Pump

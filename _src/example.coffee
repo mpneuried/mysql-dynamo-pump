@@ -1,8 +1,7 @@
-`#!/usr/bin/env coffee`
-
 cli = require("cli").enable('help', 'status')
 
-utils = require "./utils"
+# replace the local "./pump" to "mysql-dynamo-pump"
+Pump = require( "./pump" )
 
 cli.parse
 	type: [ "t", "Type of data.", [ "power", "servo" ], "servo" ]
@@ -12,10 +11,10 @@ cli.parse
 	pumps: [ "p", "Count of parrallel pumpung processes", "number", 20 ]
 	batchsize: [ "b", "Size of dynamo batch write size.", "number", 25 ]
 
-Cnf = utils.readJSON( "config.json" )
 
+Cnf = Pump.utils.readJSON( "config.json" )
 
-pump = new ( class SettingsPump extends require( "./pump" )
+pump = new ( class SettingsPump extends Pump
 	
 	sqlStatement: =>
 
