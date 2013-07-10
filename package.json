@@ -1,0 +1,28 @@
+{
+	"author": "mp <mp@tcs.de> (www.tcs.de)",
+	"name": "mysql-dynamo-pump",
+	"description": "Pump data from a mysql databse to aws dynamo db.",
+	"keywords": [ "dynamo", "aws", "amazon", "pump", "move", "db", "mysql", "migrate", "sql" ],
+	"tags": [ "dynamo", "aws", "amazon", "pump", "move", "db", "mysql", "migrate", "sql" ],
+	"version": "0.1.0",
+	"engines": {
+		"node": "> 0.8.*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/mpneuried/mysql-dynamo-pump.git"
+	},
+	"dependencies": {
+		"mysql": "2.x",
+		"aws-sdk": "*",
+		"lodash": "*",
+		"cli": "*",
+		"async": "*"
+	},
+	"devDependencies": {
+
+		"grunt": "0.4.x",
+		"grunt-regarde": "*",
+		"grunt-contrib-coffee": "*"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"aws":{
+		"accessKeyId": "aws-accesskey",
+		"secretAccessKey": "aws-secret",
+		"region": "eu-west-1",
+		"table": "my_dynamo_table"
+	},
+	"db":{
+        "user": "root",
+        "password": "password",
+        "host": "localhost",
+        "database": "mytable"
+	}
+}
